@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="data:,">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/1.3.1/jasmine-html.min.js"></script>
+<script src="sew-1.0.0.js"></script>
+<script src="specs.js"></script>
+<div></div>
+<script>
+var env = jasmine.getEnv();
+env.updateInterval = 1000;  
+env.addReporter(new jasmine.HtmlReporter());
+env.execute();
+</script>
+</html>
